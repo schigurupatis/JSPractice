@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+}
+.greateParent {
+    background-color:chocolate;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+.parent {
+    background-color:blueviolet;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+}
+.child {
+    background-color:burlywood;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
