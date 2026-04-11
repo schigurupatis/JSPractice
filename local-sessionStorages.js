@@ -21,17 +21,12 @@ const userObject2 = {
     }
 }
 
-
 localStorage.setItem("user_data", JSON.stringify(userObject))
-
 let dataFromLS = localStorage.getItem("user_data")
 let parsedUser = JSON.parse(dataFromLS)
-
 console.log(parsedUser.isCEO)
 
 
 localStorage.setItem("user_data2", JSON.stringify(userObject2))
-
 //localStorage.removeItem("user_data")
-
 //localStorage.clear()
