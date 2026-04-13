@@ -38,9 +38,11 @@ Sample Output 0
 */
 
 
+const s = '07:05:45PM'
+const s2 = '12:01:00PM'
+const s3 = '12:01:00AM'
 
 function timeConversion(s) {
-    // Write your code here
     let period = s.slice(-2);        // AM or PM
     let time = s.slice(0, 8);        // HH:MM:SS
     let [hours, minutes, seconds] = time.split(":");
@@ -57,3 +59,5 @@ function timeConversion(s) {
 
     return `${hours}:${minutes}:${seconds}`;
 }
+
+console.log(timeConversion(s));
