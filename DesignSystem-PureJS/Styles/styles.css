@@ -1,0 +1,167 @@
+/* styles.css */
+/* =========================
+   1. CSS RESET
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* =========================
+   2. BODY DEFAULTS
+========================= */
+body {
+  font-family: var(--font-family-base, Arial, sans-serif);
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+#app {
+  margin: 10px 20px;
+  padding: 10px;
+}
+/* =========================
+   3. TYPOGRAPHY
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary, #0d6efd);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   4. LAYOUT HELPERS
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+/* =========================
+   5. SPACING UTILITIES
+========================= */
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 16px; }
+
+.mb-1 { margin-bottom: 4px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-3 { margin-bottom: 16px; }
+
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 16px; }
+
+/* =========================
+   6. WIDTH & DISPLAY
+========================= */
+.w-100 { width: 100%; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-none { display: none; }
+
+/* =========================
+   7. TEXT UTILITIES
+========================= */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-bold { font-weight: bold; }
+.text-muted { color: #6c757d; }
+
+/* =========================
+   8. BORDER & RADIUS
+========================= */
+.border {
+  border: 1px solid var(--color-border, #dee2e6);
+}
+
+.rounded {
+  border-radius: var(--radius, 6px);
+}
+
+/* =========================
+   9. SHADOWS
+========================= */
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.shadow-md {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   10. CURSOR
+========================= */
+.cursor-pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+/* =========================
+   11. TRANSITIONS
+========================= */
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* =========================
+   12. ACCESSIBILITY
+========================= */
+:focus {
+  outline: 2px solid rgba(13, 110, 253, 0.5);
+  outline-offset: 2px;
+}
+
+/* =========================
+   13. SCROLLBAR (Optional)
+========================= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
