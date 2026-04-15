@@ -91,7 +91,6 @@ const t = "hackerrank"
 const k = 9;
 
 function appendAndDelete(s, t, k) {
-    // Write your code here
     let commonLength = 0;
 
     // find common prefix length
