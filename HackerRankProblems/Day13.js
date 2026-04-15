@@ -54,8 +54,8 @@ Test Case #01: In range , there are no square integers.
  *  2. INTEGER b
  */
 
-let a = 24;
-let b = 49;
+let a = 100;
+let b = 1000;
 
 function squares(a, b) {
     let start = Math.ceil(Math.sqrt(a));
