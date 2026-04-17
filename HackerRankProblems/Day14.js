@@ -52,31 +52,26 @@ Per the library's fee structure, we know that our fine will be . We then print t
 */
 
 const d1 = 9 
-const m1 = 6
+const m1 = 12
 const y1 = 2015
+//returned date is: 9-6-2015 (but he returned on this date)
 const d2 = 6 
 const m2 = 6
 const y2 = 2015
+//due date is: 6-6-2015(he should return on or before this date)
 
 function libraryFine(d1, m1, y1, d2, m2, y2) {
-
-    // Year late
-    if (y1 > y2) {
-        return 10000;
+    if(y1 > y2) {
+        return 10000
+    }
+    if(y1 === y2 && m1 > m2) {
+        return 500 * (m1 - m2)
+    }
+    if(y1 === y1 && m1 === m2 && d1 > d2) {
+        return 15 * (d1 - d2)
     }
 
-    // Same year, month late
-    if (y1 === y2 && m1 > m2) {
-        return 500 * (m1 - m2);
-    }
-
-    // Same month & year, day late
-    if (y1 === y2 && m1 === m2 && d1 > d2) {
-        return 15 * (d1 - d2);
-    }
-
-    // No fine
-    return 0;
+    return 0
 }
 
 console.log(libraryFine(d1, m1, y1, d2, m2, y2))
