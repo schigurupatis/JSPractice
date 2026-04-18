@@ -66,10 +66,10 @@ _ _ _ 1 _ _ _ _         1               1
 _ _ _ _ _ _ _ _       DONE            DONE
 */
 
-const arr = [ 1, 2, 3, 4, 3, 3, 2, 1]
+//const arr = [ 1, 2, 3, 4, 3, 3, 2, 1]
+const arr = [ 5, 4, 4, 2, 2, 8]
 
 function cutTheSticks(arr) {
-    // Write your code here
     arr.sort((a, b) => a - b); // sort ascending
 
     let result = [];
@@ -85,3 +85,4 @@ function cutTheSticks(arr) {
 }
 
 console.log(cutTheSticks(arr))
+
