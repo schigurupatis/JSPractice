@@ -74,7 +74,6 @@ function nonDivisibleSubset(k, s) {
             count += Math.max(freq[i], freq[k - i]);
         }
     }
-
     return count;
 }
 console.log(nonDivisibleSubset(k,s))
