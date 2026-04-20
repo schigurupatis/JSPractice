@@ -75,3 +75,4 @@ function repeatedString(s, n) {
 }
 
 console.log(repeatedString(s, n))
+
