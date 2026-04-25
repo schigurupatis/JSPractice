@@ -89,18 +89,10 @@ Since there is only one square, and the queen is on it, the queen can move 0 squ
 */
 
 
-let n = 5;
-let k = 3;
-let r_q = 4;
-let c_q = 3;
-let obstacles = [[5, 5], [4, 2], [2, 3]];
-
+let n = 5; let k = 3; let r_q = 4; let c_q = 3; let obstacles = [[5, 5], [4, 2], [2, 3]];
 function queensAttack(n, k, r_q, c_q, obstacles) {
     // 1. Initialize distances to the edge of the board in all 8 directions
-    let up = n - r_q;
-    let down = r_q - 1;
-    let right = n - c_q;
-    let left = c_q - 1;
+    let up = n - r_q; let down = r_q - 1; let right = n - c_q;let left = c_q - 1;
 
     let topRight = Math.min(n - r_q, n - c_q);
     let topLeft = Math.min(n - r_q, c_q - 1);
@@ -130,8 +122,6 @@ function queensAttack(n, k, r_q, c_q, obstacles) {
             else if (r < r_q && c < c_q) bottomLeft = Math.min(bottomLeft, r_q - r - 1);
         }
     }
-
     return up + down + left + right + topRight + topLeft + bottomRight + bottomLeft;
 }
-
 console.log(queensAttack(n, k, r_q, c_q, obstacles));
