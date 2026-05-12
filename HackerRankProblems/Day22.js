@@ -93,7 +93,12 @@ function taumBday(b, w, bc, wc, z) {
     let costBlack = Math.min(bc, wc + z);
     let costWhite = Math.min(wc, bc + z);
 
-    return (b * costBlack) + (w * costWhite);
+    return (BigInt(b) * BigInt(costBlack) + 
+            BigInt(w) * BigInt(costWhite)).toString();
 }
 
-console.log(taumBday(b, w, bc, wc, z))
+console.log(taumBday(b, w, bc, wc, z))  
+
+
+
+       
