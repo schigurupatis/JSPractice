@@ -22,3 +22,21 @@ for(let num of zerosArr) {
 
 console.log("given array:", givenArr)
 console.log("updated array:", numArr)
+
+
+
+
+/* optimized version */
+const givenArr = [0, 1, 0, 3, 12];
+
+let nonZeroIndex = 0;
+
+// Move non-zero elements forward
+for (let i = 0; i < givenArr.length; i++) {
+    if (givenArr[i] !== 0) {
+        [givenArr[nonZeroIndex], givenArr[i]] = [givenArr[i], givenArr[nonZeroIndex]];
+        nonZeroIndex++;
+    }
+}
+
+console.log("Updated array:", givenArr);
